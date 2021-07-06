@@ -1,0 +1,99 @@
+https://codepen.io/scriptsalmon/pen/jOmqEvQ?editors=1100
+
+    1. What is Semantic HTML? 
+        HTML tags with meaningful names.
+    2. What is HTML used for? 
+        Marking up a webpage.
+    3. What is an attribute and where do we put it? 
+        Extra info given to an html elements tag.
+    4. What is the h1 tag used for? How many times should I use it on a page?
+        Header tag used to describe the main focus of the page. Use once.
+    5. Name two tags that have required attributes
+        <img> and <input>
+    6. What do we put in the head of our HTML document? 
+        meta data, content we cannot see.
+    7. What is an id? 
+        A unique selector to identify an element by.
+    8. What elements can I add an id to? 
+        Any element
+    9. How many times can I use the same id on a page?
+        Once. 
+    10. What is a class? 
+        A class is a selector that can identify multiple elements.
+    11. What elements can I add a class to? 
+        Any
+    12. How many times can I use the same class on a page? 
+        Multiple times.
+    13. How do I get my link to open in a new tab?
+        <target = "_blank">
+    14. What is the alt attribute in the image tag used for? 
+        Provides alternate information if the img source is broken.
+    15. How do I reference an id?
+        To reference an id in css one must use the # sign followed by the id name. In Js one uses the document.getElementById("unique-id-here");
+    16. What is the difference between a section and a div
+        A section tag is not a generic container. Divs are used for to create divisions and for styling purposes, wheras a section tag is used to outline content in the document.
+    17. What is CSS used for? 
+        Styling html.
+    18. How to we select an element? Example - every h2 on the page
+        In CSS, you would select the element by typing its name directly followed by curly brackets.
+    19. What is the difference between a class and an id? - Give me an example of when I might use each one
+        A class can be used to identify multiple objects in an html. An id is unique and can define one element within the doc.  
+    20. How do we select classes in CSS?
+        The class name preceded by a period. 
+    21. How do we select a p element with a single class of “human””?
+        ".human"
+    22. What is a parent child selector? When would this be useful? 
+        A selector that covers all childeren of an element. A parent child selector enables one to modify multiple elements. Useful to keep code DRY.
+    23. How do you select all links within a div with the class of sidebar?
+        ".sidebar"
+    24. What is a pseudo selector?
+        A pseudo selector is used to define a special state of an element.
+    25. What do we use the change the spacing between lines?
+        <br>
+    26. What do we use to change the spacing between letters?
+        tag { letter-spacing: 1px; }
+    27. What do we use to to change everything to CAPITALS? lowercase? Capitalize?
+        tag { transform: uppercase, lowercase, capitalize; }
+    28. How do I add a 1px border around my div that is dotted and black?
+        div { border: dotted 1px black; }
+    29. How do I select everything on the page? 
+        CTRL + A. 
+    30. How do I write a comment in CSS?
+        /* comment here */
+    31. How do I find out what file I am in, when I am using the command line? 
+        Type "pwd" in the terminal. pwd stands for print working directory.
+    32. Using the command line - how do I see a list of files/folders in my current folder?
+        Type "ls" to list files/folders in current folder.
+    33. How do I remove a file via the command line? Why do I have to be careful with this? 
+        Type "rm" followed by the file name you wish to remove. "rm" followed by -r and filename for a directory. 
+    34. Why should I use version control? 
+        There are various benefits. One is the team can test, experiment and generate backups of files. Keep history and track changes.
+    35. How often should I commit to github?
+        I should commit every step completed. 
+    36. What is the command we would use to push our repo up to github? 
+        git push -u origin firstName-lastName
+    37. Walk me through Lambda's git flow. 
+        1. Create my own repo (fork).
+        2. Clone repo by copying link, cd to proper folder and 'git clone fileLink'.
+        3. Change directory to new (cloned) repo.
+        4. Create my own branch, 'git checkout -b firstName-lastName'.
+        5. Open file, 'code .', and start making adjustments!
+        6. Add changes to the repo, 'git add .'
+        7. Commit changes, 'git commit -m "useful commit message here"'.
+        8. Push changes from local machine back onto github, 'git push -u origin firstName-lastName'.
+        9. Check out, 'git checkout -b firstName-lastName'.
+        10. Submit a pull request (PR).
+
+Stretch Questions
+
+    1. What is the difference between an inline element and a block element?
+        Block elements are bullies. They push out elements in their line. Inline elements occupy as much space as their content takes up.
+    2. What happens when an element is positioned absolutely? 
+        An element with an absolute position is placed relative to its nearest ancestor. 
+    3. How do I make an element take up only the amount of space it needs but also have the ability to give it a width? 
+        Using flexbox, one could use the justify-content: space-around / space-between property:value pair. 
+    4. Name 3 elements that are diplay block by default, 2 elements that are display inline by default and 1 element that is display inline-block by default
+        Display block elements: h1, div, p. Display inline elements: a, span, img. Display inline-block: nav.
+    5. In your own words, explain the box model. What is the "fix" for the box model, in other words, how do we make all elements respect the width we've given them? 
+        The box model is a guide for how to structure content. A set of CSS rules that decides how element sizes are computed. 
+        The fix for the model, in my experience, is using percentage/vh values. Couple these values with flexbox display properties and content reactive/retains its shape. 
